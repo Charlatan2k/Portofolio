@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Proxima Nova', sans-serif;
+	background-color: #420fe7;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+}
+
+.navbar h1 {
+	font-size: 44px;
+	font-weight: normal;
+	margin-top: 72px;
+	margin-left: 58px;
+}
+
+.navbar ul {
+	list-style: none;
+}
+
+.nav-list {
+	display: flex;
+	justify-content: space-around;
+	width: 534px;
+	font-size: 30px;
+	font-weight: 300;
+	margin-top: 85px;
+	margin-right: 123px;
+}
+
+.seccion-intro img {
+	width: 386px;
+	height: 386px;
+}
