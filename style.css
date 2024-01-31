@@ -3,7 +3,19 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Proxima Nova', sans-serif;
-	background-color: #420fe7;
+	cursor: default;
+}
+
+html,
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: #1e1c27;
+}
+
+main {
+	width: 100%;
+	height: 100%;
 }
 
 .navbar {
@@ -13,10 +25,10 @@
 }
 
 .navbar h1 {
-	font-size: 44px;
-	font-weight: normal;
-	margin-top: 72px;
-	margin-left: 58px;
+	font-size: 54px;
+	font-weight: bold;
+	margin-top: 4.4225rem;
+	margin-left: 3.6rem;
 }
 
 .navbar ul {
@@ -26,14 +38,199 @@
 .nav-list {
 	display: flex;
 	justify-content: space-around;
-	width: 534px;
+	width: 40.08rem;
 	font-size: 30px;
 	font-weight: 300;
-	margin-top: 85px;
-	margin-right: 123px;
+	margin-top: 5.225rem;
+	margin-right: 3.6rem;
 }
 
-.seccion-intro img {
-	width: 386px;
-	height: 386px;
+.nav-list li {
+	cursor: pointer;
+}
+
+.intro-pt {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 12.1875rem;
+	gap: 3.75rem;
+}
+
+.intro-pr {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.9375rem;
+}
+
+.intro-pr p {
+	color: white;
+	font-size: 30px;
+	font-weight: 200;
+}
+
+.icons {
+	display: flex;
+	width: 39.12rem;
+	justify-content: center;
+	align-items: center;
+	gap: 1.25rem;
+}
+
+.icons a > img {
+	width: 2.5rem;
+}
+
+.f-icons {
+	display: flex;
+	height: 2.4688rem;
+	gap: 1.25rem;
+}
+
+.s-icons {
+	display: flex;
+	height: 2.4688rem;
+	gap: 1.25rem;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	gap: 0.9375rem;
+}
+
+.description h1 {
+	color: transparent;
+	-webkit-text-stroke-color: white;
+	-webkit-text-stroke-width: 0.05vw;
+	font-size: 65px;
+	overflow: visible;
+	position: relative;
+	letter-spacing: -0.5rem;
+}
+
+.hover-word span {
+	color: transparent;
+	-webkit-text-stroke-color: white;
+	-webkit-text-stroke-width: 0.06rem;
+	transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+	display: inline-block; /* Ensure each span is displayed inline */
+}
+
+.hover-word span:hover {
+	color: rgba(255, 255, 255, 1); /* Change color on hover */
+}
+
+.description h2 {
+	color: white;
+	font-size: 35px;
+	text-align: center;
+}
+
+.description-btns {
+	display: flex;
+	gap: 1.875rem;
+	margin-top: 0.875rem;
+}
+
+.description-btns button {
+	width: 12.875rem;
+	height: 5rem;
+	border-radius: 625rem;
+	border: 3px solid white;
+	cursor: pointer;
+}
+
+#cnt-btn {
+	color: black;
+	background-color: white;
+	font-size: 25px;
+	transition: all 0.15s ease-in-out;
+}
+
+#cnt-btn:hover {
+	background-color: transparent;
+	color: white;
+}
+
+#cv-btn {
+	color: white;
+	font-size: 25px;
+	background: transparent;
+	transition: all 0.15s ease-in-out;
+}
+
+#cv-btn:hover {
+	background-color: white;
+	color: black;
+}
+
+#pf-photo {
+	width: 21.625rem;
+	height: 21.625rem;
+	border-radius: 12.5rem;
+	border: 6px solid white;
+}
+
+.about-pt {
+	margin-top: 280px;
+}
+
+.marquee {
+	position: absolute;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 1951px; /* Adjust as needed */
+	transform: rotate(-9.7deg);
+	bottom: -22.98%;
+	left: -1.1%;
+}
+
+.marquee-text {
+	display: inline-block;
+	white-space: nowrap;
+	padding-left: 100%;
+	animation: marquee 9s linear infinite; /* Adjust time as needed */
+	font-size: 44px;
+	font-weight: bold;
+	color: #fff;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.rectangle-s-1 {
+	position: relative;
+	height: 1650.5008px;
+	background: #464975;
+	clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+}
+
+.about-cnt {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%;
+}
+
+.about-cnt h6 {
+	font-size: 24px;
+	font-weight: 200;
+	border: 2px solid blue;
+}
+
+.about-cnt h1 {
+	font-size: 65px;
+	font-weight: bold;
+	border: 2px solid red;
 }
