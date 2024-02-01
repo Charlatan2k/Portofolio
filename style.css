@@ -1,3 +1,5 @@
+/* Cleaners */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -13,10 +15,25 @@ body {
 	background-color: #1e1c27;
 }
 
+html {
+	overflow-x: hidden;
+	overflow-: hidden;
+	scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+ç
+
+/* Hide scrollbar for Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+	display: none;
+}
+
 main {
 	width: 100%;
 	height: 100%;
 }
+
+/* Intro section */
 
 .navbar {
 	display: flex;
@@ -93,6 +110,15 @@ main {
 	display: flex;
 	height: 2.4688rem;
 	gap: 1.25rem;
+}
+
+#linkedin-icon:hover,
+#fcb-icon:hover,
+#ig-icon:hover,
+#github-icon:hover {
+	cursor: pointer;
+	opacity: 50%;
+	transition: all 0.12s ease-in-out;
 }
 
 .description {
@@ -174,7 +200,9 @@ main {
 	border: 6px solid white;
 }
 
-.about-pt {
+/* About me section */
+
+.about-section {
 	margin-top: 280px;
 }
 
@@ -182,9 +210,9 @@ main {
 	position: absolute;
 	overflow: hidden;
 	white-space: nowrap;
-	width: 1951px; /* Adjust as needed */
-	transform: rotate(-9.7deg);
-	bottom: -22.98%;
+	width: 1949.07px; /* Adjust as needed */
+	transform: rotate(-8.59deg);
+	bottom: -20.58%;
 	left: -1.1%;
 }
 
@@ -192,7 +220,7 @@ main {
 	display: inline-block;
 	white-space: nowrap;
 	padding-left: 100%;
-	animation: marquee 9s linear infinite; /* Adjust time as needed */
+	animation: marquee 10s linear infinite; /* Adjust time as needed */
 	font-size: 44px;
 	font-weight: bold;
 	color: #fff;
@@ -209,12 +237,17 @@ main {
 
 .rectangle-s-1 {
 	position: relative;
-	height: 1650.5008px;
+	height: 1450.5008px;
 	background: #464975;
 	clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
 }
 
-.about-cnt {
+.about-title {
+	text-align: center;
+	margin-top: 300px;
+}
+
+.about-container {
 	display: flex;
 	flex-direction: column;
 	color: white;
@@ -223,14 +256,185 @@ main {
 	height: 100%;
 }
 
-.about-cnt h6 {
+.about-container h6 {
 	font-size: 24px;
 	font-weight: 200;
-	border: 2px solid blue;
 }
 
-.about-cnt h1 {
+.about-container h1 {
 	font-size: 65px;
 	font-weight: bold;
-	border: 2px solid red;
+	border-bottom: #fff 2px solid;
+	width: 500px;
+	text-align: center;
+}
+
+.about-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 146px;
+	margin-top: 170px;
+}
+
+.about-content p {
+	color: #fff;
+	letter-spacing: 0.05em;
+	line-height: 44px;
+	width: 842px;
+	font-size: 36px;
+	font-weight: 300;
+	text-align: right;
+}
+
+.about-text {
+	font-style: italic;
+	font-weight: 900;
+	font-size: 36px;
+}
+
+.about-content img {
+	width: 672.46px;
+	height: 510px;
+}
+
+/* Skills section */
+
+.skills-section {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	gap: 150px;
+}
+
+.skills-title {
+	display: flex;
+	justify-content: center;
+}
+
+.skills-title h1 {
+	font-size: 65px;
+	font-weight: bold;
+	color: #fff;
+	border-bottom: 2px solid #fff;
+	width: 300px;
+	text-align: center;
+}
+
+.skills-setup {
+	display: flex;
+	gap: 30px;
+}
+
+.skills-setup-fr-t {
+	display: flex;
+	flex-direction: column;
+	margin-top: 90px;
+	gap: 30px;
+}
+
+.skills-content {
+	display: flex;
+	justify-self: center;
+	align-self: center;
+	gap: 18rem;
+}
+
+.skills-stack {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	gap: 2.5rem;
+}
+
+.skills-stack-text {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.skills-stack-text p {
+	font-size: 24px;
+	font-weight: 200;
+	color: #fff;
+}
+
+.skills-stack img {
+	width: 50px;
+}
+
+.skills-stack h1 {
+	text-align: center;
+	justify-self: center;
+	align-self: center;
+	font-size: 48px;
+	font-weight: bold;
+	width: 300px;
+	color: #fff;
+}
+
+#tech-stack-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 50.25rem;
+	gap: 80px;
+	flex-wrap: wrap;
+}
+
+#tech-stack-content p {
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#tech-stack-content iconify-icon {
+	font-size: 90px;
+}
+
+#tech-stack-content h2 {
+	color: #fff;
+	font-size: 30px;
+	margin-right: auto;
+	margin-left: 30px;
+	border-bottom: 3px solid #fff;
+	width: 100%;
+	text-align: left;
+}
+
+.tech-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 50.25rem;
+	gap: 70px;
+	flex-wrap: wrap;
+}
+
+#tools,
+#back-end,
+#front-end {
+	transition: all 0.1s ease-in-out;
+}
+
+#back-end {
+	margin-top: 120px;
+	height: 250px;
+}
+
+#front-end {
+	height: 240px;
+	width: 300px;
+	margin-left: 20px;
+}
+
+#tools:hover,
+#back-end:hover,
+#front-end:hover {
+	cursor: pointer;
+	filter: brightness(30%);
 }

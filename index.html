@@ -4,6 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+		<script src="./JS/stack.js"></script>
 		<title>Portofolio</title>
 	</head>
 	<body>
@@ -19,33 +22,33 @@
 		</header>
 
 		<main>
-			<div class="intro-pt">
+			<section class="intro-pt">
 				<img
 					id="pf-photo"
 					src="./Photos/Foto perfil.png"
 					alt="Foto de perfil"
 				/>
-				<div class="intro-pr">
-					<section class="icons">
+				<article class="intro-pr">
+					<nav class="icons">
 						<div class="f-icons">
-							<a href="">
-								<img src="./Icons/linkedin.svg" alt="" />
+							<a href="https://www.linkedin.com/in/octavian-calin/">
+								<img id="linkedin-icon" src="./Icons/linkedin.svg" alt="" />
 							</a>
-							<a href="">
-								<img src="./Icons/git.svg" alt="" />
+							<a href="https://github.com/Charlatan2k">
+								<img id="github-icon" src="./Icons/git.svg" alt="" />
 							</a>
 						</div>
 						<p>Hello, I'm</p>
 						<div class="s-icons">
-							<a href="">
-								<img src="./Icons/ig.svg" alt="" />
+							<a href="https://www.instagram.com/octavio_calin/">
+								<img id="ig-icon" src="./Icons/ig.svg" alt="" />
 							</a>
-							<a href="">
-								<img src="./Icons/fcb.svg" alt="" />
+							<a href="https://www.facebook.com/profile.php?id=100009373644477">
+								<img id="fcb-icon" src="./Icons/fcb.svg" alt="" />
 							</a>
 						</div>
-					</section>
-					<section class="description">
+					</nav>
+					<article class="description">
 						<h1 class="hover-word">
 							<span>O</span>
 							<span>c</span>
@@ -63,29 +66,78 @@
 							<span>n</span>
 						</h1>
 						<h2>Full Stack Developer</h2>
-					</section>
-					<section class="description-btns">
+					</article>
+					<div class="description-btns">
 						<a href="../../../../Pictures/CV ENG JUNIOR.pdf" download>
 							<button id="cv-btn">Download CV</button>
 						</a>
 						<button id="cnt-btn">Contact Info</button>
-					</section>
-				</div>
-			</div>
+					</div>
+				</article>
+			</section>
 
-			<section class="about-pt">
+			<section class="about-section">
 				<div class="marquee">
 					<p class="marquee-text">Welcome to my portofolio</p>
 				</div>
 
-				<div class="rectangle-s-1">
-					<section class="about-cnt">
-						<div class="about-title">
+				<section class="rectangle-s-1">
+					<article class="about-container">
+						<header class="about-title">
 							<h6>Get To Know More</h6>
 							<h1>About Me</h1>
+						</header>
+
+						<article class="about-content">
+							<img
+								src="./Photos/programming.svg"
+								alt="Illustration of person programming"
+							/>
+							<p>
+								I'm a
+								<span class="about-text">Spain-based full-stack developer</span>
+								with a lifelong passion for technology, ignited at the
+								<span class="about-text">age of 13.</span> Specialising in
+								<span class="about-text">front-end development</span>, I stay at
+								the forefront of emerging tech stacks, crafting
+								<span class="about-text">immersive digital experiences</span>
+								that blend functionality with
+								<span class="about-text">aesthetic appeal.</span> Beyond coding,
+								<span class="about-text">photography</span> is my creative
+								outlet, where I capture moments and emotions through the lens
+							</p>
+						</article>
+					</article>
+				</section>
+			</section>
+
+			<section class="skills-section">
+				<article class="skills-container">
+					<header class="skills-title">
+						<h1>Skills</h1>
+					</header>
+				</article>
+
+				<article class="skills-content">
+					<div class="skills-setup">
+						<img id="back-end" src="./svg/pc.svg" alt="" />
+						<div class="skills-setup-fr-t">
+							<img id="front-end" src="./svg/monitor.svg" alt="" />
+							<img id="tools" src="./svg/peripherals.svg" alt="" />
 						</div>
-					</section>
-				</div>
+					</div>
+					<div class="skills-stack-text">
+						<div class="skills-stack">
+							<h1>Tech Stack</h1>
+							<div id="tech-stack-content">
+								<p>
+									Click on Each Component to Reveal Different Aspects of Web
+									Development
+								</p>
+							</div>
+						</div>
+					</div>
+				</article>
 			</section>
 		</main>
 	</body>
