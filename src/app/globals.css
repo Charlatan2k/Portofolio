@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #1e1e1e;
+  --foreground: #f0f4f8;
+  --primary-blue: #5dd2c0;
+  --primary-gray: #3a3a3a;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', 'Montserrat', 'Noto Sans', Helvetica, sans-serif;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; /* For macOS */
+  font-smooth: always; /* Standard property, but not widely supported */
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span {
+  letter-spacing: 0.1em;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Image bg */
+
+.bg-bugatti-project {
+  background-image: url('/Bugatti-project.png');
+}
+
+.icons-BG {
+  background-image: url('/iconsBigBG.png');
+}
+
+/* Keyframe animation for fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Smooth fade effect for text transitions */
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+/* Apply fade-out when language is changing */
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+.navbar-text {
+  transition: opacity 0.5s ease-in-out;
+}
