@@ -9,7 +9,7 @@ export default function Skills() {
     backgroundImage: `url(${
       process.env.NODE_ENV === 'production'
         ? '/new-portofolio/iconsBigBG.png'
-        : '/iconsBigBG.png'
+        : 'iconsBigBG.png'
     })`,
   };
 
