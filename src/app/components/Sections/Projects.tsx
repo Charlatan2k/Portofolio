@@ -9,6 +9,14 @@ export default function Projects() {
   const handleOpenModal = (project: string) => setOpenModal(project);
   const handleCloseModal = () => setOpenModal(null);
 
+  const backgroundStyleHirun = {
+    backgroundImage: `url(${
+      process.env.NODE_ENV === 'production'
+        ? '/new-portofolio/hirun-thumbnail.jpg'
+        : 'hirun-thumbnail.jpg'
+    })`,
+  };
+
   return (
     <section id='projects' className='flex flex-col items-center'>
       <div className='border-[3px] w-0 border-[var(--primary-gray)] h-32'></div>
@@ -39,6 +47,7 @@ export default function Projects() {
             </div>
             <div className='project-v cursor-pointer flex justify-center items-center h-full w-[38%] mr-20'>
               <div
+                style={backgroundStyleHirun}
                 onClick={() => handleOpenModal('hirun')}
                 className='projects-mobile hover:bg-transparent transition-all rounded-xl bg-[var(--primary-blue)] w-full h-[80%] '
               >
