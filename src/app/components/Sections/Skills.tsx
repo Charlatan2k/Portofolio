@@ -5,8 +5,17 @@ import { useTranslation } from 'react-i18next';
 export default function Skills() {
   const { t } = useTranslation();
 
+  const backgroundStyle = {
+    backgroundImage: `url(${
+      process.env.NODE_ENV === 'production'
+        ? '/new-portofolio/iconsBigBG.png'
+        : '/iconsBigBG.png'
+    })`,
+  };
+
   return (
     <section
+      style={backgroundStyle}
       id='skills'
       className='skillsSection icons-BG  bg-no-repeat bg-contain bg-center w-full h-[100vh] flex flex-col justify-start items-center'
     >
