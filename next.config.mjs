@@ -6,8 +6,8 @@ const nextConfig = {
     unoptimized: true,
   },
   distDir: 'dist',
-  basePath: isProd ? '/my-portofolio' : '',
-  assetPrefix: isProd ? '/my-portofolio/' : '',
+  basePath: isProd ? '/new-portofolio' : '',
+  assetPrefix: isProd ? '/new-portofolio/' : '',
 
   output: 'export',
 };
