@@ -8,8 +8,8 @@ export default function Skills() {
   const backgroundStyle = {
     backgroundImage: `url(${
       process.env.NODE_ENV === 'production'
-        ? '/new-portofolio/iconsBigBG.png'
-        : 'iconsBigBG.png'
+        ? '/new-portofolio/IconsBigBG.png'
+        : 'IconsBigBG.png'
     })`,
   };
 
