@@ -62,7 +62,7 @@ span {
 }
 
 .icons-BG {
-  background-image: url('/iconsBigBG.png');
+  background-image: url('iconsBigBG.png');
 }
 
 /* Keyframe animation for fade-in */
