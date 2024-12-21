@@ -2,7 +2,7 @@
 
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { I18nextProvider } from 'react-i18next';
 import i18n from '../i18n'; // Make sure the path is correct
 import Nav from './components/Sections/Nav';
@@ -24,6 +24,10 @@ const StyledContent = styled.div`
 `;
 
 export default function Home() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen((prev) => !prev);
+  };
   const sections = ['head', 'about', 'skills', 'projects', 'contact'];
   let currentSectionIndex = 0;
 
@@ -58,17 +62,26 @@ export default function Home() {
 
   return (
     <I18nextProvider i18n={i18n}>
-      <StyledContent>
-        <Loader />
-        <Nav />
-        <Head />
-        <Social />
-        <Email />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </StyledContent>
+      <Nav
+        isMobileMenuOpen={isMobileMenuOpen}
+        toggleMobileMenu={toggleMobileMenu}
+      />
+      <div
+        className={`relative ${
+          isMobileMenuOpen ? 'opacity-5 pointer-events-none' : ''
+        }`}
+      >
+        <StyledContent>
+          <Loader />
+          <Head />
+          <Social />
+          <Email />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+        </StyledContent>
+      </div>
     </I18nextProvider>
   );
 }
