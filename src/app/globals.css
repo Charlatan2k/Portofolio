@@ -57,14 +57,6 @@ span {
 
 /* Image bg */
 
-.bg-bugatti-project {
-  background-image: url('/Bugatti-project.png');
-}
-
-.icons-BG {
-  background-image: url('/public/iconsBigBG.png');
-}
-
 /* Keyframe animation for fade-in */
 @keyframes fadeIn {
   0% {

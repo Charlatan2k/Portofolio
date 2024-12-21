@@ -17,6 +17,15 @@ export default function Projects() {
     })`,
   };
 
+  const backgroundStyleBugatti = {
+    backgroundImage: `url(${
+      process.env.NODE_ENV === 'production'
+        ? '/new-portofolio/Bugatti-project.png'
+        : 'Bugatti-project.png'
+    })`,
+    backgroundSize: '100% 100%', // Add this property here
+  };
+
   return (
     <section id='projects' className='flex flex-col items-center'>
       <div className='border-[3px] w-0 border-[var(--primary-gray)] h-32'></div>
@@ -35,8 +44,8 @@ export default function Projects() {
                 onClick={() => handleOpenModal('bugatti')}
               >
                 <div
-                  className='bg-bugatti-project  w-full h-full rounded-xl bg-contain bg-center bg-no-repeat opacity-50 '
-                  style={{ backgroundSize: '100% 100%' }}
+                  className='bg-bugatti-project  w-full h-full rounded-xl bg-cover bg-center bg-no-repeat opacity-50 '
+                  style={backgroundStyleBugatti}
                 ></div>
               </div>
               <div className='incoming-project cursor-pointer bg-[#9ebbb7] rounded-xl w-full h-[40%] flex items-center justify-center'>
@@ -45,13 +54,15 @@ export default function Projects() {
                 </h1>
               </div>
             </div>
-            <div className='project-v cursor-pointer flex justify-center items-center h-full w-[38%] mr-20'>
+            <div className='project-v  cursor-pointer flex justify-center items-center h-full w-[38%] mr-20'>
               <div
-                style={backgroundStyleHirun}
                 onClick={() => handleOpenModal('hirun')}
                 className='projects-mobile hover:bg-transparent transition-all rounded-xl bg-[var(--primary-blue)] w-full h-[80%] '
               >
-                <div className='bg-bugatti-project w-full h-full rounded-xl bg-contain bg-center bg-no-repeat opacity-50'></div>
+                <div
+                  style={backgroundStyleHirun}
+                  className='bg-hirun-project  w-full h-full rounded-xl bg-cover bg-center bg-no-repeat opacity-50'
+                ></div>
               </div>
             </div>
           </div>
@@ -68,19 +79,19 @@ export default function Projects() {
           }}
         >
           <div className='bg-[var(--background)] p-6 rounded-xl shadow-lg h-[70%] w-[70%]'>
-            <div className=' container w-full h-full flex items-center justify-center gap-40 border-[5px] rounded-lg border-[var(--primary-gray)]'>
+            <div className=' container w-full h-full flex items-center justify-center gap-20 border-[5px] rounded-lg border-[var(--primary-gray)]'>
               <div
-                className='thumbnail bg-bugatti-project ml-10 border-[5px] border-[var(--primary-gray)] w-[50%] h-[45%] bg-cover bg-center bg-no-repeat'
-                style={{ backgroundSize: '100% 100%' }}
+                className='thumbnail bg-bugatti-project ml-10  border-[5px] border-[var(--primary-gray)] w-[100%] h-[45%] bg-cover bg-center bg-no-repeat'
+                style={backgroundStyleBugatti}
               ></div>
               <div className='content mr-10 flex flex-col '>
-                <h1 className='text-7xl font-bold mb-4 pb-4 border-b-2 border-[var(--primary-gray)]'>
+                <h1 className='text-7xl font-bold mb-4 text-center pb-4 border-b-2 w-96 border-[var(--primary-gray)]'>
                   Bugatti
                 </h1>
-                <p className='w-96 border-b-2 pb-4 border-[var(--primary-gray)]'>
+                <p className='w-96 border-b-2 text-left pb-4 border-[var(--primary-gray)]'>
                   {t('bugatti_description')}
                 </p>
-                <div className='stack flex w-[28rem] gap-4 pt-4 pb-4 flex-wrap border-b-2 border-[var(--primary-gray)]'>
+                <div className='stack flex w-96 gap-[0.8rem] pt-4 pb-4 flex-wrap justify-center border-b-2 border-[var(--primary-gray)]'>
                   <Skill name='React' />
                   <Skill name='Javascript' />
                   <Skill name='Typescript' />
@@ -93,7 +104,7 @@ export default function Projects() {
                   href='https://charlatan2k.github.io/Bugatti-Chiron-57/'
                   className='flex self-center'
                 >
-                  <button className='mt-4 px-14 py-2 text-xl font-sf-mono bg-transparent border-2 border-[var(--primary-blue)] self-center text-white rounded hover:bg-[var(--primary-gray)] hover:transition-all'>
+                  <button className='mt-4 px-20 py-2 text-xl font-montserrat  bg-transparent border-2 border-[var(--primary-blue)] text-white rounded hover:bg-[var(--primary-gray)] hover:transition-all'>
                     {t('projectsButton')}
                   </button>
                 </a>
@@ -111,15 +122,18 @@ export default function Projects() {
         >
           <div className='bg-[var(--background)] p-6 rounded-xl shadow-lg h-[70%] w-[70%]'>
             <div className=' container w-full h-full flex items-center justify-center gap-40 border-[5px] rounded-lg border-[var(--primary-gray)]'>
-              <div className='thumbnail bg-bugatti-project ml-10 border-2 w-[50%] h-[65%] bg-cover bg-center bg-no-repeat'></div>
+              <div
+                style={backgroundStyleHirun}
+                className='thumbnail bg-hirun-project ml-10 border-2 w-[50%] h-[65%] bg-cover bg-center bg-no-repeat'
+              ></div>
               <div className='content mr-10 flex flex-col '>
-                <h1 className='text-7xl font-bold mb-4 border-b-2 border-[var(--primary-gray)]'>
+                <h1 className='text-7xl w-96 font-bold mb-4 border-b-2 border-[var(--primary-gray)]'>
                   Hirun
                 </h1>
                 <p className='w-96 border-b-2 pb-4 border-[var(--primary-gray)]'>
                   {t('hirun_description')}
                 </p>
-                <div className='stack flex w-[28rem] gap-4 pt-4 pb-4 flex-wrap border-b-2 border-[var(--primary-gray)]'>
+                <div className='stack flex w-96 gap-[0.4rem] pt-4 pb-4 flex-wrap border-b-2 border-[var(--primary-gray)]'>
                   <Skill name='Angular' />
                   <Skill name='Javascript' />
                   <Skill name='Typescript' />
@@ -135,7 +149,7 @@ export default function Projects() {
                   href='https://hi-run.vercel.app/'
                   className='flex self-center'
                 >
-                  <button className='mt-4 px-14 py-2 text-xl font-sf-mono bg-transparent border-2 border-[var(--primary-blue)] self-center text-white rounded hover:bg-[var(--primary-gray)] hover:transition-all'>
+                  <button className='mt-4 px-20 py-2 text-xl font-montserrat bg-transparent border-2 border-[var(--primary-blue)] self-center text-white rounded hover:bg-[var(--primary-gray)] hover:transition-all'>
                     {t('projectsButton')}
                   </button>
                 </a>

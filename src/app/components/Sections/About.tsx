@@ -12,7 +12,7 @@ export default function About() {
     >
       <section
         id='#about'
-        className='border-[5px] flex flex-col items-center rounded-xl border-[var(--primary-gray)] w-[80%] h-[977px] pb-36'
+        className='border-[5px] flex flex-col items-center rounded-xl border-[var(--primary-gray)] w-[80%] h-[10%] pb-36'
       >
         <header className='titles-div justify-center items-center flex gap-6 mt-44'>
           <hr className='border-[2px] border-[var(--primary-gray)] w-36' />
@@ -70,7 +70,7 @@ export default function About() {
               />
             </figure>
           </div>
-          <section className=' flex items-center justify-between mt-12 h-24 w-full '>
+          <section className=' flex items-end justify-between mb-[-2%] h-44 w-full '>
             <CircularProgressBar percentage={85} text={t('progressCircle1')} />
             <CircularProgressBar percentage={75} text='Fitness' />
             <CircularProgressBar percentage={55} text={t('progressCircle3')} />
