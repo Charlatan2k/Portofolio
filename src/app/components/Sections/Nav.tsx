@@ -66,7 +66,11 @@ export default function Nav() {
           >
             {t('contact')}
           </Link>
-          <Button needsFontAdjustment={true} className='font-normal'>
+          <Button
+            href={i18n.language === 'en' ? 'cv_en.pdf' : '/cv_esp.pdf'}
+            needsFontAdjustment={true}
+            className='font-normal'
+          >
             {t('resume')}
           </Button>
         </div>

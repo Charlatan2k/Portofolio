@@ -48,7 +48,7 @@ export default function Projects() {
                   style={backgroundStyleBugatti}
                 ></div>
               </div>
-              <div className='incoming-project cursor-pointer bg-[#9ebbb7] rounded-xl w-full h-[40%] flex items-center justify-center'>
+              <div className='incoming-project bg-[#9ebbb7] rounded-xl w-full h-[40%] flex items-center justify-center'>
                 <h1 className='text-[var(--background)] text-3xl font-extrabold font-sf-mono'>
                   Incoming Project
                 </h1>
@@ -127,7 +127,7 @@ export default function Projects() {
                 className='thumbnail bg-hirun-project ml-10 border-2 w-[50%] h-[65%] bg-cover bg-center bg-no-repeat'
               ></div>
               <div className='content mr-10 flex flex-col '>
-                <h1 className='text-7xl w-96 font-bold mb-4 border-b-2 border-[var(--primary-gray)]'>
+                <h1 className='text-7xl w-96 font-bold mb-4 text-center border-b-2 border-[var(--primary-gray)]'>
                   Hirun
                 </h1>
                 <p className='w-96 border-b-2 pb-4 border-[var(--primary-gray)]'>

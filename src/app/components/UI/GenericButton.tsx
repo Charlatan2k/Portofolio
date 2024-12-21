@@ -9,6 +9,7 @@ interface ButtonProps {
   size?: 'big';
   onClick?: () => string;
   needsFontAdjustment?: boolean; // New prop to control font size adjustment
+  href?: string;
 }
 
 const GenericButton = styled.button.attrs((props) => ({
@@ -57,10 +58,34 @@ const Button = ({
   size,
   onClick,
   needsFontAdjustment,
+  href,
 }: ButtonProps) => {
   const { i18n } = useTranslation(); // Get current language
   const currentLang = i18n.language;
 
+  if (href) {
+    // Render an <a> tag for links/downloads
+    return (
+      <a
+        href={href}
+        download // This ensures the file is downloaded instead of opened in the browser
+        className={className}
+        style={{
+          textDecoration: 'none', // Optional: removes underline from the link
+        }}
+      >
+        <GenericButton
+          size={size}
+          lang={currentLang}
+          needsFontAdjustment={needsFontAdjustment}
+        >
+          {children}
+        </GenericButton>
+      </a>
+    );
+  }
+
+  // Render a <button> for other interactions
   return (
     <GenericButton
       onClick={onClick}
