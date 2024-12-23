@@ -21,7 +21,7 @@ const config: Config = {
         25: '6.875rem',
       },
       screens: {
-        '3xl': '1921px',
+        '2xl': '1920px',
       },
       clipPath: {
         circle: 'circle(50%)',
