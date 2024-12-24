@@ -28,37 +28,37 @@ export default function Home() {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
   };
-  const sections = ['head', 'about', 'skills', 'projects', 'contact'];
-  let currentSectionIndex = 0;
+  // const sections = ['head', 'about', 'skills', 'projects', 'contact'];
+  // let currentSectionIndex = 0;
 
-  useEffect(() => {
-    i18n.init(); // Ensures i18n is properly initialized
+  // useEffect(() => {
+  //   i18n.init(); // Ensures i18n is properly initialized
 
-    // Scroll snapping logic
-    const handleScroll = (event: WheelEvent) => {
-      if (event.deltaY > 0) {
-        // Scroll down
-        currentSectionIndex = Math.min(
-          currentSectionIndex + 1,
-          sections.length - 1
-        );
-      } else {
-        // Scroll up
-        currentSectionIndex = Math.max(currentSectionIndex - 1, 0);
-      }
+  //   // Scroll snapping logic
+  //   const handleScroll = (event: WheelEvent) => {
+  //     if (event.deltaY > 0) {
+  //       // Scroll down
+  //       currentSectionIndex = Math.min(
+  //         currentSectionIndex + 1,
+  //         sections.length - 1
+  //       );
+  //     } else {
+  //       // Scroll up
+  //       currentSectionIndex = Math.max(currentSectionIndex - 1, 0);
+  //     }
 
-      scroller.scrollTo(sections[currentSectionIndex], {
-        duration: 800,
-        smooth: 'easeInOutQuart',
-      });
-    };
+  //     scroller.scrollTo(sections[currentSectionIndex], {
+  //       duration: 800,
+  //       smooth: 'easeInOutQuart',
+  //     });
+  //   };
 
-    window.addEventListener('wheel', handleScroll);
+  //   window.addEventListener('wheel', handleScroll);
 
-    return () => {
-      window.removeEventListener('wheel', handleScroll);
-    };
-  }, [sections]);
+  //   return () => {
+  //     window.removeEventListener('wheel', handleScroll);
+  //   };
+  // }, [sections]);
 
   return (
     <I18nextProvider i18n={i18n}>
