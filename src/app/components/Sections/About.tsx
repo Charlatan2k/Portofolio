@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div
       id='about'
-      className='flex xl:mt-[23%] 2xl:mt-[18%] w-full flex-col justify-center items-center'
+      className='flex lg:mt-[33%] xl:mt-[23%] 2xl:mt-[18%] w-full flex-col justify-center items-center'
     >
       <section
         id='#about'
@@ -23,13 +23,13 @@ export default function About() {
         </header>
         <article className='content-container flex flex-col w-full xl:mt-24 mt-10'>
           <div className='content-duo 2xl:gap-[20%] gap-[20%] flex'>
-            <section className='flex items-center justify-center 2xl:gap-64 xl:gap-24'>
-              <section className='text-container flex ml-24 flex-col items-center 2xl:w-[40%] xl:w-[70%] relative'>
+            <section className='flex flex-col xl:flex-row items-center justify-center 2xl:gap-64 xl:gap-24'>
+              <section className='text-container lg:rounded-xl lg:border-b-4 lg:border-t-4 lg:pt-4 xl:border-b-0 xl:border-t-0 xl:pt-0 xl:rounded-none border-[var(--primary-blue)] flex lg:w-[90%] xl:ml-24 flex-col items-center 2xl:w-[40%] xl:w-[70%] relative'>
                 <h2 className='text-3xl font-medium '>
                   {t('about_second_title')}
                 </h2>
-                <article className='flex flex-col p-8 border-l-4 border-t-4 border-[var(--primary-blue)] rounded-md'>
-                  <p className='font-light text-xl'>
+                <article className='flex flex-col p-8 xl:border-l-4 xl:border-t-4 border-[var(--primary-blue)] rounded-md'>
+                  <p className='font-light lg:text-base xl:text-xl'>
                     {t('description1')}{' '}
                     <span className='font-bold text-[var(--primary-blue)]'>
                       JavaScript
@@ -69,7 +69,7 @@ export default function About() {
                   width={400}
                   height={400}
                   alt='About me Photo'
-                  className='mr-20'
+                  className='lg:w-[70%] xl:w-auto lg:mt-10 lg:mb-14 xl:mr-20'
                 />
               </figure>
             </section>
