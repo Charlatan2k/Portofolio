@@ -19,7 +19,7 @@ export default function Skills() {
       id='skills'
       className='skillsSection icons-BG  bg-no-repeat bg-contain bg-center w-full h-[100vh] flex flex-col justify-start items-center'
     >
-      <div className='border-[3px] pb-40 3xl: pb-60 border-[var(--primary-gray)]'></div>
+      <div className='border-[3px] pb-40  3xl:pb-60 border-[var(--primary-gray)]'></div>
 
       <div
         id='skills-title-box'
