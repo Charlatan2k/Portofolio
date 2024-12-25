@@ -8,11 +8,11 @@ export default function About() {
   return (
     <div
       id='about'
-      className='flex xl:mt-[30%] 2xl:mt-[18%] w-full flex-col justify-center items-center'
+      className='flex xl:mt-[23%] 2xl:mt-[18%] w-full flex-col justify-center items-center'
     >
       <section
         id='#about'
-        className='border-[5px] flex flex-col items-center rounded-xl border-[var(--primary-gray)] w-[80%] h-[10%] pb-36'
+        className='border-[5px] flex flex-col items-center rounded-xl border-[var(--primary-gray)] w-[80%] h-[10%] 2xl:pb-36 xl:pb-12'
       >
         <header className='titles-div justify-center items-center flex gap-6 w-full mt-44'>
           <hr className='border-[2px] border-[var(--primary-gray)] w-[50%] xl:w-[8%]' />
@@ -74,7 +74,7 @@ export default function About() {
               </figure>
             </section>
           </div>
-          <section className=' flex items-end p-8 mt-12 justify-between mb-[-7%] h-44 w-full '>
+          <section className=' flex items-end p-8 xl:mt-12  2xl:mt-12 justify-between xl:mb-[-7%] pb-20 h-44 w-full '>
             <CircularProgressBar percentage={85} text={t('progressCircle1')} />
             <CircularProgressBar percentage={75} text='Fitness' />
             <CircularProgressBar percentage={55} text={t('progressCircle3')} />
