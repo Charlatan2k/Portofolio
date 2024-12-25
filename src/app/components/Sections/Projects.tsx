@@ -30,7 +30,7 @@ export default function Projects() {
     <section id='projects' className='flex flex-col items-center'>
       <div className='border-[3px] w-0 border-[var(--primary-gray)] h-32'></div>
       <article className='flex flex-col w-full h-[105vh] items-center'>
-        <section className='w-[70%] h-full flex flex-col border-[5px] border-[var(--primary-gray)] rounded-xl justify-center items-center'>
+        <section className='2xl:w-[70%] xl:w-[80%] h-full flex flex-col border-[5px] border-[var(--primary-gray)] rounded-xl justify-center items-center'>
           <div className='title-container flex flex-col justify-center items-center mt-10'>
             <h1 className='text-6xl font-extrabold border-b-2 w-[550px] border-[var(--primary-gray)] text-center'>
               {t('projectsTitle')}
