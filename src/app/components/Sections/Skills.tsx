@@ -31,7 +31,7 @@ export default function Skills() {
       <div className='border-[3px] border-[var(--primary-gray)] h-24'></div>
       <div
         id='skills-content-box'
-        className='border-[5px] border-[var(--primary-gray)] rounded-xl lg:h-[85%] xl:h-[53%] 2xl:h-[48%] xl:w-[85%] 2xl:w-[80%] flex justify-center items-center'
+        className='border-[5px] border-[var(--primary-gray)] rounded-xl lg:h-[85%] xl:h-[53%] 2xl:h-[48%] xl:w-[85%] lg:w-[85%] 2xl:w-[80%] flex justify-center items-center'
       >
         <section className='flex flex-col border-r-[5px] border-[var(--primary-gray)] h-full justify-between w-[90%]'>
           <div className='flex flex-col items-center justify-center h-full'>
@@ -46,7 +46,7 @@ export default function Skills() {
                 Back
               </h1>
             </div>
-            <div className=' xl:w-[95%] 2xl:w-[85%] 3xl:w-[80%] h-auto flex gap-6 flex-wrap items-center justify-center mt-8'>
+            <div className=' lg:w-[95%] xl:w-[95%] 2xl:w-[85%] 3xl:w-[80%] h-auto flex gap-6 flex-wrap items-center justify-center mt-8'>
               <Skill name='Node' />
               <Skill name='Express' />
               <Skill name='MySQL' />
@@ -98,7 +98,7 @@ export default function Skills() {
                 {t('tools')}
               </h1>
             </div>
-            <div className=' w-[99%] 3xl:w-[90%] h-auto flex gap-6 flex-wrap items-center justify-center mt-8'>
+            <div className='  xl:w-[99%] lg:w-[99%] 3xl:w-[90%] h-auto flex lg:gap-[1.286rem] xl:gap-6 flex-wrap items-center justify-center mt-8'>
               <Skill name='GIT' />
               <Skill name='Figma' />
               <Skill name='Docker' />
