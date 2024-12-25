@@ -12,7 +12,7 @@ export default function About() {
     >
       <section
         id='#about'
-        className='border-[5px] flex flex-col items-center rounded-xl border-[var(--primary-gray)] w-[80%] h-[10%] 2xl:pb-36 xl:pb-12 3xl:pb-64'
+        className='border-[5px] flex flex-col items-center rounded-xl border-[var(--primary-gray)] w-[80%] h-[10%] 2xl:pb-36 xl:pb-12 3xl:pb-80'
       >
         <header className='titles-div justify-center items-center flex gap-6 w-full mt-44'>
           <hr className='border-[2px] border-[var(--primary-gray)] w-[50%] xl:w-[8%]' />
@@ -23,13 +23,13 @@ export default function About() {
         </header>
         <article className='content-container flex flex-col w-full xl:mt-24 mt-10'>
           <div className='content-duo 2xl:gap-[20%] gap-[20%] flex'>
-            <section className='flex flex-col xl:flex-row items-center justify-center 2xl:gap-64 xl:gap-24'>
+            <section className='flex flex-col xl:flex-row items-center justify-center 3xl:gap-[15%] 2xl:gap-64 xl:gap-24'>
               <section className='text-container lg:rounded-xl lg:border-b-4 lg:border-t-4 lg:pt-4 xl:border-b-0 xl:border-t-0 xl:pt-0 xl:rounded-none border-[var(--primary-blue)] flex lg:w-[90%] xl:ml-24 flex-col items-center 2xl:w-[40%] xl:w-[70%] relative'>
-                <h2 className='text-3xl font-medium '>
+                <h2 className='text-3xl 3xl:text-4xl font-medium '>
                   {t('about_second_title')}
                 </h2>
                 <article className='flex flex-col p-8 xl:border-l-4 xl:border-t-4 border-[var(--primary-blue)] rounded-md'>
-                  <p className='font-light lg:text-base xl:text-xl'>
+                  <p className='font-light lg:text-base xl:text-xl 3xl:text-2xl'>
                     {t('description1')}{' '}
                     <span className='font-bold text-[var(--primary-blue)]'>
                       JavaScript
@@ -69,12 +69,12 @@ export default function About() {
                   width={400}
                   height={400}
                   alt='About me Photo'
-                  className='lg:w-[70%] xl:w-auto lg:mt-10 lg:mb-14 xl:mr-20'
+                  className='lg:w-[70%] 3xl:w-[90%] 3xl:mr-40 xl:w-auto lg:mt-10 lg:mb-14 xl:mr-20'
                 />
               </figure>
             </section>
           </div>
-          <section className=' flex items-end p-8 xl:mt-12  2xl:mt-12 justify-between xl:mb-[-7%] 2xl:mb-[-14%] 2xl:pb-28 pb-20 3xl:h-48 h-44 w-full '>
+          <section className=' flex items-end p-8 xl:mt-12  2xl:mt-12 justify-between xl:mb-[-7%] 2xl:mb-[-14%] 3xl:mb-[-14%] 3xl:pb-8 2xl:pb-28 pb-20 3xl:h-48 h-44 w-full '>
             <CircularProgressBar percentage={85} text={t('progressCircle1')} />
             <CircularProgressBar percentage={75} text='Fitness' />
             <CircularProgressBar percentage={55} text={t('progressCircle3')} />
