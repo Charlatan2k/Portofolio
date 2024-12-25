@@ -30,21 +30,21 @@ export default function Projects() {
     <section id='projects' className='flex flex-col items-center'>
       <div className='border-[3px] w-0 border-[var(--primary-gray)] h-32'></div>
       <article className='flex flex-col w-full h-[105vh] items-center'>
-        <section className='2xl:w-[70%] xl:w-[80%] h-full flex flex-col border-[5px] border-[var(--primary-gray)] rounded-xl justify-center items-center'>
+        <section className='2xl:w-[70%] xl:w-[80%] lg:w-[84%] h-full flex flex-col border-[5px] border-[var(--primary-gray)] rounded-xl justify-center items-center'>
           <div className='title-container flex flex-col justify-center items-center mt-10'>
             <h1 className='text-6xl font-extrabold border-b-2 w-[550px] border-[var(--primary-gray)] text-center'>
               {t('projectsTitle')}
             </h1>
             <p className='text-xl mt-2'>{t('projects_subtitle')}</p>
           </div>
-          <div className='projects w-full  h-full flex gap-20 justify-center items-center'>
-            <div className='projects-h h-[80%] w-[40%]  flex flex-col items-center justify-center gap-32 ml-20'>
+          <div className='projects w-full  h-full flex lg:gap-10 xl:gap-0 justify-center items-center'>
+            <div className='projects-h xl:h-[80%] xl:w-[80%] lg:w-[140%] lg:h-[90%] text-center  flex flex-col items-center justify-center gap-32 ml-20'>
               <div
                 className=' project-bugatti cursor-pointer hover:bg-transparent  transition-all bg-[var(--primary-blue)] rounded-xl w-full h-[40%] '
                 onClick={() => handleOpenModal('bugatti')}
               >
                 <div
-                  className='bg-bugatti-project  w-full h-full rounded-xl bg-cover bg-center bg-no-repeat opacity-50 '
+                  className='bg-bugatti-project w-full h-full rounded-xl bg-cover bg-center bg-no-repeat opacity-50 '
                   style={backgroundStyleBugatti}
                 ></div>
               </div>
@@ -54,10 +54,10 @@ export default function Projects() {
                 </h1>
               </div>
             </div>
-            <div className='project-v  cursor-pointer flex justify-center items-center h-full w-[38%] mr-20'>
+            <div className='project-v  cursor-pointer flex justify-center items-center h-full w-[120%] lg:mr-10 xl:mr-0'>
               <div
                 onClick={() => handleOpenModal('hirun')}
-                className='projects-mobile hover:bg-transparent transition-all rounded-xl bg-[var(--primary-blue)] w-full h-[80%] '
+                className='projects-mobile hover:bg-transparent transition-all rounded-xl bg-[var(--primary-blue)] xl:w-[70%] xl:h-[80%] lg:w-[120%] lg:h-[90%] '
               >
                 <div
                   style={backgroundStyleHirun}
@@ -78,7 +78,7 @@ export default function Projects() {
             if (e.target === e.currentTarget) handleCloseModal();
           }}
         >
-          <div className='bg-[var(--background)] p-6 rounded-xl shadow-lg h-[70%] w-[70%]'>
+          <div className='bg-[var(--background)] p-6 rounded-xl shadow-lg xl:h-[70%] xl:w-[70%] lg:w-[100%] lg:h-[60%]'>
             <div className=' container w-full h-full flex items-center justify-center gap-20 border-[5px] rounded-lg border-[var(--primary-gray)]'>
               <div
                 className='thumbnail bg-bugatti-project ml-10  border-[5px] border-[var(--primary-gray)] w-[100%] h-[45%] bg-cover bg-center bg-no-repeat'
@@ -120,7 +120,7 @@ export default function Projects() {
             if (e.target === e.currentTarget) handleCloseModal();
           }}
         >
-          <div className='bg-[var(--background)] p-6 rounded-xl shadow-lg h-[70%] w-[70%]'>
+          <div className='bg-[var(--background)] p-6 rounded-xl shadow-lg xl:h-[70%] xl:w-[70%] lg:w-[100%] lg:h-[60%]'>
             <div className=' container w-full h-full flex items-center justify-center gap-40 border-[5px] rounded-lg border-[var(--primary-gray)]'>
               <div
                 style={backgroundStyleHirun}
