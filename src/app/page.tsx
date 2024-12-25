@@ -25,25 +25,33 @@ const StyledContent = styled.div`
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [disableSnapScroll, setDisableSnapScroll] = useState(false);
+  const sections = ['head', 'about', 'skills', 'projects', 'contact'];
+  let currentSectionIndex = 0;
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
   };
-  const sections = ['head', 'about', 'skills', 'projects', 'contact'];
-  let currentSectionIndex = 0;
 
   useEffect(() => {
     i18n.init(); // Ensures i18n is properly initialized
 
-    // Scroll snapping logic
+    const detectTouchpad = (event: WheelEvent) => {
+      const isTouchpad = Math.abs(event.deltaY) < 50 && event.deltaMode === 0;
+      if (isTouchpad) {
+        setDisableSnapScroll(true);
+      }
+    };
+
     const handleScroll = (event: WheelEvent) => {
+      if (disableSnapScroll) return; // Disable snapping for touchpads
+
       if (event.deltaY > 0) {
-        // Scroll down
         currentSectionIndex = Math.min(
           currentSectionIndex + 1,
           sections.length - 1
         );
       } else {
-        // Scroll up
         currentSectionIndex = Math.max(currentSectionIndex - 1, 0);
       }
 
@@ -53,12 +61,14 @@ export default function Home() {
       });
     };
 
+    window.addEventListener('wheel', detectTouchpad, { once: true });
     window.addEventListener('wheel', handleScroll);
 
     return () => {
+      window.removeEventListener('wheel', detectTouchpad);
       window.removeEventListener('wheel', handleScroll);
     };
-  }, [sections]);
+  }, [sections, disableSnapScroll]);
 
   return (
     <I18nextProvider i18n={i18n}>

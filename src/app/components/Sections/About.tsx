@@ -12,7 +12,7 @@ export default function About() {
     >
       <section
         id='#about'
-        className='border-[5px] flex flex-col items-center rounded-xl border-[var(--primary-gray)] w-[80%] h-[10%] 2xl:pb-36 xl:pb-12 3xl:pb-80'
+        className='border-[5px] flex flex-col items-center rounded-xl border-[var(--primary-gray)] w-[80%] h-[10%] 2xl:pb-[10rem] xl:pb-12 3xl:pb-80'
       >
         <header className='titles-div justify-center items-center flex gap-6 w-full mt-44'>
           <hr className='border-[2px] border-[var(--primary-gray)] w-[50%] xl:w-[8%]' />
