@@ -43,6 +43,8 @@ const resources = {
         'The Bugatti Chiron Super Sport 57 One of One showcase highlights the car’s unique design and powerful W16 engine. This exclusive website dives into its custom features, exceptional performance, and luxury, offering a closer look at what makes this Bugatti truly one of a kind.',
       hirun_description:
         'HiRun is a web application for mobile devices, designed for professionals looking to offer their services to clients, and where users can hire those services, publish your own, or even discover new opportunities to collaborate and Expand your network of contacts.',
+      hirun_warning:
+        'PLEASE READ: The database is currently shutdown, watch video to see a preview of the app ',
       projectsButton: 'Visit',
       contactTitle: 'Contact Me',
       contactText:
@@ -88,6 +90,8 @@ const resources = {
         'El escaparate del Bugatti Chiron Super Sport 57 One of One resalta el diseño único del coche y su potente motor W16. Este sitio web exclusivo profundiza en sus características personalizadas, rendimiento excepcional y lujo, ofreciendo una visión más cercana de lo que hace a este Bugatti verdaderamente único.',
       hirun_description:
         'HiRun es una aplicación web para dispositivos móviles, diseñada para profesionales que buscan ofrecer sus servicios a clientes, donde los usuarios pueden contratar esos servicios, publicar los suyos propios o incluso descubrir nuevas oportunidades para colaborar y expandir su red de contactos.',
+      hirun_warning:
+        'PORFAVOR LEER: La base de datos está inactiva, mirar el video para presenciar la aplicación siendo utilizada',
       projectsButton: 'Visitar',
       contactTitle: 'Contáctame',
       contactText:

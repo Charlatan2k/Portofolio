@@ -133,6 +133,15 @@ export default function Projects() {
                 <p className='w-96 border-b-2 pb-4 border-[var(--primary-gray)]'>
                   {t('hirun_description')}
                 </p>
+                <p className='w-96 border-b-2 pt-4 pb-4 text-red-500 border-[var(--primary-gray)]'>
+                  {t('hirun_warning')}
+                </p>
+                <a
+                  className='bg-white text-black py-2 text-xl font-montserrat bg-transparent border-2 font-bold self-center w-full text-center rounded hover:bg-[var(--primary-gray)] hover:transition-all'
+                  href='https://youtu.be/dhpJvurs5CU'
+                >
+                  VIDEO
+                </a>
                 <div className='stack flex w-96 gap-[0.4rem] pt-4 pb-4 flex-wrap border-b-2 border-[var(--primary-gray)]'>
                   <Skill name='Angular' />
                   <Skill name='Javascript' />
