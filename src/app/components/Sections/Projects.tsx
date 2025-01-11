@@ -12,7 +12,7 @@ export default function Projects() {
   const backgroundStyleHirun = {
     backgroundImage: `url(${
       process.env.NODE_ENV === 'production'
-        ? '/new-portofolio/hirun-thumbnail.jpg'
+        ? '/Portofolio/hirun-thumbnail.jpg'
         : 'hirun-thumbnail.jpg'
     })`,
   };
@@ -20,7 +20,7 @@ export default function Projects() {
   const backgroundStyleBugatti = {
     backgroundImage: `url(${
       process.env.NODE_ENV === 'production'
-        ? '/new-portofolio/Bugatti-project.png'
+        ? '/Portofolio/Bugatti-project.png'
         : 'Bugatti-project.png'
     })`,
     backgroundSize: '100% 100%', // Add this property here
