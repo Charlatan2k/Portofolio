@@ -16,7 +16,7 @@ export default function Head() {
             <h1 className='text-5xl font-bold'>Octavian Mihai Calin</h1>
             <h2 className='text-4xl font-bold opacity-75'>{t('title')}</h2>
           </div>
-          <p className='text-xl font-bold opacity-75 w-[863px] text-center mt-7'>
+          <p className='text-xl font-bold opacity-75 md:w-[663px] lg:w-[863px] text-center mt-7'>
             {t('bio')}
           </p>
           <Link to='about' smooth={true} duration={500}>
