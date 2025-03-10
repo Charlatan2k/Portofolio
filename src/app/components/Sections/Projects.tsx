@@ -120,7 +120,7 @@ export default function Projects() {
             if (e.target === e.currentTarget) handleCloseModal();
           }}
         >
-          <div className='bg-[var(--background)] p-6 rounded-xl shadow-lg xl:h-[70%] xl:w-[70%] lg:w-[100%] lg:h-[60%]'>
+          <div className='bg-[var(--background)] p-6 rounded-xl shadow-lg xl:h-[70%] xl:w-[70%] lg:w-[100%] lg:h-[72%]'>
             <div className=' container w-full h-full flex items-center justify-center gap-40 border-[5px] rounded-lg border-[var(--primary-gray)]'>
               <div
                 style={backgroundStyleHirun}
