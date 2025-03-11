@@ -8,15 +8,15 @@ export default function About() {
   return (
     <div
       id='about'
-      className='flex md:mt-[40%] lg:mt-[33%] xl:mt-[23%] 2xl:mt-[18%] w-full flex-col justify-center items-center'
+      className='flex md:mt-[40%] lg:mt-[33%] xl:mt-[23%] 2xl:mt-[18%] 3xl:mt-[15%] w-full flex-col justify-center items-center'
     >
       <section
         id='#about'
-        className='border-[5px] flex flex-col items-center rounded-xl border-[var(--primary-gray)] w-[80%] h-[10%] pb-24'
+        className='border-[5px] flex flex-col items-center rounded-xl border-[var(--primary-gray)] w-[80%] h-[10%] md:pb-24 lg:pb-0 xl:pb-24 3xl:pb-52'
       >
         <header className='titles-div justify-center items-center flex gap-6 w-full mt-44'>
           <hr className='border-[2px] border-[var(--primary-gray)] w-[50%] xl:w-[8%]' />
-          <h1 className='font-bold sm:text-3xl xl:text-center text-center  lg:text-5xl'>
+          <h1 className='font-bold sm:text-3xl xl:text-center text-center  lg:text-4xl'>
             {t('about_title')}
           </h1>
           <hr className='border-[2px] border-[var(--primary-gray)] w-[50%] xl:w-[55%]' />
